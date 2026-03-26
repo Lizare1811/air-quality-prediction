@@ -1,39 +1,104 @@
-Air Quality Prediction :
+Air Quality Prediction using Deep Learning
 
-This project predicts PM2.5 levels in the air using a Deep Learning model built with Keras/TensorFlow. It helps monitor air pollution based on environmental data
+Project Overview
 
-Dataset :
+This project predicts PM2.5 levels in the air using a Deep Learning model built with TensorFlow/Keras. It helps monitor air pollution by learning patterns from environmental data such as temperature, humidity, and other pollutant levels.
 
-The dataset contains measurements like PM2.5, PM10, temperature, humidity, and other air quality parameters. It is cleaned and ready for training and testing
+Tech Stack
 
-Objective :
+1)Python
 
-To build a model that can accurately predict PM2.5 concentrations based on input features like temperature, humidity, and other pollutants
+2)TensorFlow / Keras
 
-How It Works :
+3)Pandas
 
-1)The model is a Deep Neural Network trained on historical air quality data
+4)NumPy
 
-2)It learns patterns between input features (like temperature, humidity, PM10) and the target (PM2.5)
+5)Matplotlib
 
-3)After training, the model can predict PM2.5 levels for new data
+Dataset
 
-Key Features :
+The dataset contains environmental and air quality parameters used to train the model.
 
-1)Predicts PM2.5 concentrations in real-time
+Key Features:
 
-2)Uses a trained deep learning model for accurate predictions
+PM10
 
-3)Small model size (pm25_model.h5) for easy usage
+Temperature
 
-Results :
+Humidity
 
-1)The model predicts PM2.5 with good accuracy on test data
+Other pollutant indicators
 
-2)Can be used to monitor air quality in real-time applications
+Target Variable:
 
-Future Work :
+PM2.5 concentration
 
-1)Extend the model to predict other pollutants like PM10, NO2, CO
+Objective
 
-2)Deploy the model in a web or mobile application for live predictions
+To build a deep learning model that can accurately predict PM2.5 levels based on environmental conditions and pollutant data.
+
+
+Methodology
+
+ Data preprocessing and cleaning
+ 
+ Feature selection
+ 
+ Train-test split
+ 
+ Model building using a Deep Neural Network
+ 
+ Model training and evaluation
+
+
+Model Details
+
+Deep Neural Network (DNN)
+
+Implemented using TensorFlow/Keras
+
+Model saved as: `pm25_model.h5`
+
+Results
+
+The model predicts PM2.5 levels with good accuracy on test data
+
+Performance evaluated using standard regression metrics
+
+
+How to Run
+
+1. Install required libraries:
+   pip install tensorflow pandas numpy matplotlib
+
+2. Run the script:
+   python main.py
+
+Output
+
+The model predicts PM2.5 concentration values based on input environmental features.
+
+Applications
+
+Air pollution monitoring systems
+
+Smart city applications
+
+Environmental analysis
+
+Future Improvements
+
+Predict additional pollutants (PM10, NO2, CO)
+
+Improve accuracy using advanced models (LSTM, GRU)
+
+Deploy as a web or mobile application
+
+Integrate with real-time sensor data
+
+
+Conclusion
+
+This project demonstrates how deep learning can be applied to environmental data to predict air pollution levels and support better decision-making for public health.
+
